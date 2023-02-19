@@ -45,8 +45,8 @@ class Yabai < Formula
     environment_variables PATH: std_service_path_env
     keep_alive true
     interval 30
-    log_path var/"log/yabai/yabai.out.log"
-    err_log_path var"/log/yabai/yabai.err.log"
+    log_path "#{var}/log/yabai/yabai.out.log"
+    error_log_path "#{var}/log/yabai/yabai.err.log"
     process_type :interactive
   end
 
